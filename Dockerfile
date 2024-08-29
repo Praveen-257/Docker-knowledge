@@ -10,7 +10,7 @@ COPY . /app
 RUN apt-get update && apt-get install -y python python3-pip
 
 #set ENV variable
-ENV NAME hello
+ENV NAME=hello
 
 #Command to run my application
 CMD ["python3" , "test.py"]
